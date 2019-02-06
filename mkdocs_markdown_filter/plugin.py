@@ -22,7 +22,6 @@ class MarkdownFilterPlugin(BasePlugin):
         self.dirs = []
 
     def md_filter(self, text, **kwargs):
-        print( "text: " + text )
         md = markdown.Markdown(
             extensions=self.config['markdown_extensions'],
             extension_configs=self.config['mdx_configs'] or {}

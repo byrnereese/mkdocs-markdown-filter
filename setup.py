@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='mkdocs-markdown-filter',
-    version='0.1.0',
+    version='0.1.1',
     description='A MkDocs plugin to add a markdown filter to jinja templates.',
     long_description='',
     keywords='mkdocs jinja',
