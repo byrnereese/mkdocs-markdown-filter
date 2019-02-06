@@ -23,20 +23,18 @@ More information about plugins in the [MkDocs documentation][mkdocs-plugins].
 
 Enabling this plugin will filter jinja template code through a markdown filter:
 
-```
-{% set code_content %}
-```php linenums="1"
-<?php
-foo = 1;
-bar = 3;
-if (foo == bar ) {
-  // do something
-}
-?>
-```
-{% endset %}
-{{ code_content|markdown }}
-```
+    {% set code_content %}
+    ```php linenums="1"
+    <?php
+    foo = 1;
+    bar = 3;
+    if (foo == bar ) {
+      // do something 
+    }
+    ?>
+    ```
+    {% endset %}
+    {{ code_content|markdown }}
 
 ## See Also
 
