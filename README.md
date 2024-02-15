@@ -1,4 +1,4 @@
-# mkdocs-bootstrap-tables-plugin
+# mkdocs-markdown-filter plugin
 
 This plugin adds a "markdown" template filter to mkdocs.
 
