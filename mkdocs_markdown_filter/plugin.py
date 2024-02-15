@@ -11,6 +11,7 @@ from mkdocs.plugins import BasePlugin
 import jinja2
 from jinja2.ext import Extension
 import markdown
+import markupsafe
 
 class MarkdownFilterPlugin(BasePlugin):
 
@@ -26,7 +27,7 @@ class MarkdownFilterPlugin(BasePlugin):
             extensions=self.config['markdown_extensions'],
             extension_configs=self.config['mdx_configs'] or {}
         )
-        return jinja2.Markup(md.convert(text))
+        return markupsafe.Markup(md.convert(text))
 
     def on_env(self, env, config, files):
         self.config = config
